@@ -6,9 +6,7 @@ metadata:
     project: roboshop
     component: nginx
     purpose: tolerations-demo
-spec:
-  nodeSelector:
-    kubernetes.io/hostname: ip-192-168-12-148.ec2.internal                                                                                                             │
+spec:                                                                                                             │
   replicas: 1
   selector:
     matchLabels: 
@@ -24,6 +22,8 @@ spec:
         purpose: tolerations-demo
 
     spec:
+      nodeSelector:
+        kubernetes.io/hostname: ip-192-168-12-148.ec2.internal
       containers:
       - name: nginx
         image: nginx:latest
