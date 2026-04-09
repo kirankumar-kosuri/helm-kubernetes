@@ -5,20 +5,20 @@ metadata:
   labels:
     project: roboshop
     environment: development
-    purpose: toleations-demo
+    purpose: tolerations-demo
 spec:
   replicas: 1
   selector:
     matchLabels:
       project: roboshop
       environment: development
-      purpose: toleations-demo
+      purpose: tolerations-demo
   template:
     metadata:
       labels:
         project: roboshop
         environment: development
-        purpose: toleations-demo
+        purpose: tolerations-demo
     spec:
       nodeSelector:
         kubernetes.io/hostname: ip-192-168-22-110.ec2.internal                                                                                                            │
