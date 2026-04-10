@@ -17,14 +17,14 @@ spec:
           #   values:
           #   - ssd      
       preferredDuringSchedulingIgnoredDuringExecution:
-      - weight: 10
+      - weight: 100
         preference:
           matchExpressions:
           - key: project
             operator: In
             values:
             - docker 
-      - weight: 100
+      - weight: 10
         preference:
             matchExpressions:
             - key: project
