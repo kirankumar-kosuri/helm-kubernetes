@@ -8,10 +8,10 @@ spec:
       requiredDuringSchedulingIgnoredDuringExecution:
         nodeSelectorTerms:
         - matchExpressions:
-          - key: topology.kubernetes.io/zone
+          - key:  topology.kubernetes.io/zone
             operator: NotIn
             values:
-            - us-east-1f
+            - us-east-1c          
   containers:
   - name: nginx
     image: nginx
